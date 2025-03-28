@@ -1,0 +1,4 @@
+mode_type_id,mode_type,name,vot,pce,occ,demand_file
+1,sov,DRIVE, 10, 1, 1,demand.csv
+2,hov,HOV, 10, 1, 2,demand_hov.csv
+3,trk,truck, 10, 2, 1,demand_trk.csv

@@ -1,0 +1,2 @@
+mode_type_id,mode_type,name,vot,pce,occ,demand_file,dedicated_shortest_path
+1,sov,DRIVE,10,1,1,demand.csv,1

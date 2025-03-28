@@ -1,0 +1,43 @@
+no_nodes= 24, no_zones = 24, FirstThruNode Node ID = 1, number_of_links = 76
+read demand file demand.csv
+ mode type = sov, total_volume = 360600.000000
+iter No = 1, Lambda = 1.000000, g_System_VMT = 0.000000, sys. TT =  71268558.137095, least TT =  6881878.107142, gap = 935.597507 % 
+iter No = 2, Lambda = 0.312500, g_System_VMT = 3176000.000000, sys. TT =  21191522.923439, least TT =  8913237.675503, gap = 137.753370 % 
+iter No = 3, Lambda = 0.250000, g_System_VMT = 3872875.000000, sys. TT =  13511500.132887, least TT =  10179749.015458, gap = 32.729207 % 
+iter No = 4, Lambda = 0.187500, g_System_VMT = 3980956.250000, sys. TT =  12031038.212038, least TT =  9743606.920264, gap = 23.476227 % 
+iter No = 5, Lambda = 0.343750, g_System_VMT = 3935045.703125, sys. TT =  10562962.037616, least TT =  8385249.383947, gap = 25.970756 % 
+iter No = 6, Lambda = 0.156250, g_System_VMT = 3827195.617676, sys. TT =  9681918.771698, least TT =  8634623.373218, gap = 12.129022 % 
+iter No = 7, Lambda = 0.468750, g_System_VMT = 3812133.802414, sys. TT =  9113988.027009, least TT =  7570379.111005, gap = 20.390114 % 
+iter No = 8, Lambda = 0.093750, g_System_VMT = 3635117.957532, sys. TT =  8583733.474514, least TT =  7889153.797345, gap = 8.804235 % 
+iter No = 9, Lambda = 0.187500, g_System_VMT = 3656500.649014, sys. TT =  8357600.096707, least TT =  7789215.930665, gap = 7.297065 % 
+iter No = 10, Lambda = 0.187500, g_System_VMT = 3628525.527324, sys. TT =  8122065.620302, least TT =  7637657.951963, gap = 6.342359 % 
+iter No = 11, Lambda = 0.156250, g_System_VMT = 3615583.240950, sys. TT =  7989464.702053, least TT =  7574194.012680, gap = 5.482705 % 
+iter No = 12, Lambda = 0.156250, g_System_VMT = 3596132.734552, sys. TT =  7927266.797199, least TT =  7578817.759299, gap = 4.597670 % 
+iter No = 13, Lambda = 0.125000, g_System_VMT = 3564768.244778, sys. TT =  7860136.313469, least TT =  7560343.380959, gap = 3.965335 % 
+iter No = 14, Lambda = 0.125000, g_System_VMT = 3549672.214181, sys. TT =  7785861.011008, least TT =  7515239.634271, gap = 3.600968 % 
+iter No = 15, Lambda = 0.125000, g_System_VMT = 3543475.687408, sys. TT =  7760460.655759, least TT =  7518841.938335, gap = 3.213510 % 
+iter No = 16, Lambda = 0.093750, g_System_VMT = 3525778.726482, sys. TT =  7702884.192935, least TT =  7507357.867861, gap = 2.604463 % 
+iter No = 17, Lambda = 0.250000, g_System_VMT = 3524552.595875, sys. TT =  7758441.153318, least TT =  7443001.876727, gap = 4.238065 % 
+iter No = 18, Lambda = 0.062500, g_System_VMT = 3478564.446906, sys. TT =  7643965.002038, least TT =  7511851.722316, gap = 1.758731 % 
+iter No = 19, Lambda = 0.093750, g_System_VMT = 3494416.668974, sys. TT =  7620205.752975, least TT =  7465377.052473, gap = 2.073957 % 
+iter No = 20, Lambda = 0.093750, g_System_VMT = 3492165.106258, sys. TT =  7598149.135411, least TT =  7474352.470852, gap = 1.656286 % 
+iter No = 21, Lambda = 0.093750, g_System_VMT = 3487471.502546, sys. TT =  7580089.629795, least TT =  7451217.967489, gap = 1.729538 % 
+iter No = 22, Lambda = 0.062500, g_System_VMT = 3483124.174183, sys. TT =  7578499.374601, least TT =  7466932.713962, gap = 1.494143 % 
+iter No = 23, Lambda = 0.062500, g_System_VMT = 3478035.163296, sys. TT =  7551110.348517, least TT =  7454049.469477, gap = 1.302123 % 
+iter No = 24, Lambda = 0.093750, g_System_VMT = 3479820.465590, sys. TT =  7562985.118654, least TT =  7445000.982173, gap = 1.584743 % 
+iter No = 25, Lambda = 0.062500, g_System_VMT = 3470584.171941, sys. TT =  7548951.864994, least TT =  7464510.896691, gap = 1.131232 % 
+iter No = 26, Lambda = 0.093750, g_System_VMT = 3468372.661195, sys. TT =  7540484.820212, least TT =  7441694.463628, gap = 1.327525 % 
+iter No = 27, Lambda = 0.031250, g_System_VMT = 3465393.974208, sys. TT =  7528752.105597, least TT =  7452519.092814, gap = 1.022916 % 
+iter No = 28, Lambda = 0.093750, g_System_VMT = 3465506.662514, sys. TT =  7546223.262000, least TT =  7441091.238827, gap = 1.412858 % 
+iter No = 29, Lambda = 0.031250, g_System_VMT = 3456356.037903, sys. TT =  7530133.274387, least TT =  7468407.438895, gap = 0.826493 % 
+iter No = 30, Lambda = 0.062500, g_System_VMT = 3457738.661719, sys. TT =  7531739.852914, least TT =  7457002.889745, gap = 1.002239 % 
+iter No = 31, Lambda = 0.031250, g_System_VMT = 3454817.495361, sys. TT =  7529830.562954, least TT =  7470698.728803, gap = 0.791517 % 
+iter No = 32, Lambda = 0.031250, g_System_VMT = 3453129.448631, sys. TT =  7526358.436973, least TT =  7471589.572499, gap = 0.733028 % 
+iter No = 33, Lambda = 0.062500, g_System_VMT = 3452431.653361, sys. TT =  7525523.004094, least TT =  7461377.563569, gap = 0.859700 % 
+iter No = 34, Lambda = 0.031250, g_System_VMT = 3450042.175026, sys. TT =  7517753.183313, least TT =  7468875.568278, gap = 0.654417 % 
+iter No = 35, Lambda = 0.031250, g_System_VMT = 3450503.357057, sys. TT =  7512221.446282, least TT =  7464350.406577, gap = 0.641329 % 
+iter No = 36, Lambda = 0.031250, g_System_VMT = 3450547.002149, sys. TT =  7514800.736692, least TT =  7466408.212679, gap = 0.648137 % 
+iter No = 37, Lambda = 0.031250, g_System_VMT = 3448645.533332, sys. TT =  7515406.057953, least TT =  7468406.041322, gap = 0.629318 % 
+iter No = 38, Lambda = 0.031250, g_System_VMT = 3447231.610415, sys. TT =  7510745.029885, least TT =  7466447.924918, gap = 0.593282 % 
+iter No = 39, Lambda = 0.031250, g_System_VMT = 3447202.497590, sys. TT =  7510054.736068, least TT =  7467565.805832, gap = 0.568980 % 
+CPU running time: 0 hours 0 minutes 0 seconds 52 ms

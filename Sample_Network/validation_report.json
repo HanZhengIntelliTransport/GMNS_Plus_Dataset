@@ -1,0 +1,741 @@
+{
+  "summary": {
+    "total": 59,
+    "errors": 1,
+    "warnings": 7,
+    "success": 19,
+    "info": 32
+  },
+  "errors": [
+    {
+      "message": "Missing required fields in link file: vdf_plf",
+      "field": null,
+      "details": {
+        "missing_fields": [
+          "vdf_plf"
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "message": "Found 52 links with unusually high hourly capacity (>3000)",
+      "field": "capacity",
+      "details": {
+        "high_capacity_count": 52,
+        "example_links": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "message": "Found 76 links with unusually high capacity per lane (>2500)",
+      "field": "capacity",
+      "details": {
+        "high_cap_per_lane_count": 76,
+        "example_links": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "message": "Link type 1 has large capacity variation (min=4823.950831, max=25900.20064)",
+      "field": "capacity",
+      "details": {
+        "link_type": 1,
+        "capacity_min": 4823.950831,
+        "capacity_max": 25900.20064,
+        "capacity_mean": 10247.206327210526,
+        "count": 76.0
+      }
+    },
+    {
+      "message": "Found 48 demand records with zero or negative volume",
+      "field": "volume",
+      "details": {
+        "invalid_volume_count": 48
+      }
+    },
+    {
+      "message": "Found 124 OD pairs with very high distance ratios (>5.0) - extremely circuitous routes",
+      "field": "accessibility_distance",
+      "details": {
+        "very_high_count": 124,
+        "example_pairs": [
+          [
+            9.0,
+            10.0,
+            4.827,
+            0.370039,
+            13.0446
+          ],
+          [
+            10.0,
+            9.0,
+            4.827,
+            0.370039,
+            13.0446
+          ],
+          [
+            9.0,
+            11.0,
+            12.872,
+            1.35148,
+            9.52439
+          ],
+          [
+            11.0,
+            9.0,
+            12.872,
+            1.35148,
+            9.52439
+          ],
+          [
+            17.0,
+            9.0,
+            14.481,
+            1.79516,
+            8.0667
+          ],
+          [
+            9.0,
+            17.0,
+            14.481,
+            1.79516,
+            8.0667
+          ],
+          [
+            8.0,
+            9.0,
+            16.09,
+            2.21114,
+            7.27677
+          ],
+          [
+            9.0,
+            8.0,
+            16.09,
+            2.21114,
+            7.27677
+          ],
+          [
+            9.0,
+            14.0,
+            19.308,
+            2.67277,
+            7.22396
+          ],
+          [
+            14.0,
+            9.0,
+            19.308,
+            2.67277,
+            7.22396
+          ]
+        ]
+      }
+    },
+    {
+      "message": "Found 4 routes (0.3%) with extremely high congestion (>5x free flow time)",
+      "field": "route_assignment",
+      "details": {
+        "high_congestion_count": 4,
+        "high_congestion_percent": 0.2770083102493075,
+        "example_routes": [
+          [
+            6.0,
+            8.0,
+            7.42155
+          ],
+          [
+            8.0,
+            6.0,
+            7.27425
+          ],
+          [
+            10.0,
+            16.0,
+            5.0228
+          ],
+          [
+            16.0,
+            10.0,
+            5.09885
+          ]
+        ]
+      }
+    },
+    {
+      "message": "Found 4 routes (0.3%) with extremely high congestion (>5x free flow time)",
+      "field": "route_assignment",
+      "details": {
+        "high_congestion_count": 4,
+        "high_congestion_percent": 0.2770083102493075,
+        "example_routes": [
+          [
+            6.0,
+            8.0,
+            7.42155
+          ],
+          [
+            8.0,
+            6.0,
+            7.27425
+          ],
+          [
+            10.0,
+            16.0,
+            5.0228
+          ],
+          [
+            16.0,
+            10.0,
+            5.09885
+          ]
+        ]
+      }
+    }
+  ],
+  "success": [
+    {
+      "message": "Single mode type defined, satisfying Level 4 readiness criteria",
+      "field": "mode_type",
+      "details": {}
+    },
+    {
+      "message": "Length (meters) and vdf_length_mi (miles) values are consistent",
+      "field": "length",
+      "details": {}
+    },
+    {
+      "message": "Free_speed (km/h) and vdf_free_speed_mph (mph) values are consistent",
+      "field": "free_speed",
+      "details": {}
+    },
+    {
+      "message": "VDF free flow travel time (vdf_fftt) values are consistent with length and speed",
+      "field": "vdf_fftt",
+      "details": {}
+    },
+    {
+      "message": "Nodes are correctly sorted by node_id in ascending order",
+      "field": "node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by from_node_id in ascending order",
+      "field": "from_node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by to_node_id within from_node_id groups",
+      "field": "to_node_id",
+      "details": {}
+    },
+    {
+      "message": "All zones in demand file exist in node file",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "Demand file demand.csv: All significant OD pairs have feasible paths",
+      "field": "accessibility",
+      "details": {
+        "file": "demand.csv"
+      }
+    },
+    {
+      "message": "Overall network connectivity: All significant OD pairs have feasible paths",
+      "field": "accessibility",
+      "details": {}
+    },
+    {
+      "message": "Good correlation between assigned and reference volumes (R\u00b2 = 0.994)",
+      "field": "reference_volume",
+      "details": {
+        "r_squared": 0.9942118634232279
+      }
+    },
+    {
+      "message": "Low percentage error between assigned and reference volumes (MAPE = 5.9%)",
+      "field": "reference_volume",
+      "details": {
+        "mape": 5.860509244478038
+      }
+    },
+    {
+      "message": "Good correlation between assigned and reference volumes (R\u00b2 = 0.990)",
+      "field": "reference_volume",
+      "details": {
+        "r_squared": 0.9901529165953455
+      }
+    },
+    {
+      "message": "Low percentage error between assigned and reference volumes (MAPE = 3.1%)",
+      "field": "reference_volume",
+      "details": {
+        "mape": 3.100639843894361
+      }
+    },
+    {
+      "message": "Link performance validation completed successfully with reasonable metrics",
+      "field": "assignment",
+      "details": {}
+    },
+    {
+      "message": "ref_volume imported successfully",
+      "field": "ref_volume",
+      "details": {}
+    },
+    {
+      "message": "R^2 value computed: 0.9901. Comparison successful.",
+      "field": "r2_score",
+      "details": {}
+    },
+    {
+      "message": "Route assignment validation completed successfully with proper path distributions",
+      "field": "route_assignment",
+      "details": {}
+    },
+    {
+      "message": "Traffic assignment validation (Level 7) completed successfully",
+      "field": "level_7",
+      "details": {}
+    }
+  ],
+  "info": [
+    {
+      "message": "Found mode_type.csv with 1 mode type definitions",
+      "field": "mode_type",
+      "details": {}
+    },
+    {
+      "message": "Found settings.csv with 1 configuration rows",
+      "field": "settings",
+      "details": {}
+    },
+    {
+      "message": "VDF free speed values appear to be in mph (mean: 60.00, range: 60-60)",
+      "field": "vdf_free_speed_mph",
+      "details": {}
+    },
+    {
+      "message": "Length values appear to be in meters (mean: 6647.71, range: 3218-16090)",
+      "field": "length",
+      "details": {}
+    },
+    {
+      "message": "VDF length values appear to be in miles (mean: 4.13, range: 2-10)",
+      "field": "vdf_length_mi",
+      "details": {}
+    },
+    {
+      "message": "Capacity values range from 4823.950831 to 25900.20064 (mean: 10247.21)",
+      "field": "capacity",
+      "details": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526
+      }
+    },
+    {
+      "message": "Field 'district_id' in node file contains 22 null/empty values",
+      "field": "district_id",
+      "details": {}
+    },
+    {
+      "message": "Field 'obs_volume' in link file contains 67 null/empty values",
+      "field": "obs_volume",
+      "details": {}
+    },
+    {
+      "message": "Field 'vdf_toll' in link file contains 76 null/empty values",
+      "field": "vdf_toll",
+      "details": {}
+    },
+    {
+      "message": "Found 24 zone centroids out of 24 total nodes",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "No physical nodes found, network contains only zone centroids",
+      "field": "node_id",
+      "details": {}
+    },
+    {
+      "message": "Identified 0 connector links between zone centroids and physical nodes",
+      "field": "link_id",
+      "details": {
+        "connector_count": 0
+      }
+    },
+    {
+      "message": "Found 76 links directly connecting zone centroids to other zone centroids",
+      "field": "link_id",
+      "details": {
+        "centroid_links_count": 76
+      }
+    },
+    {
+      "message": "Found 24 demand records with same origin and destination zone",
+      "field": "o_zone_id",
+      "details": {
+        "self_loop_count": 24
+      }
+    },
+    {
+      "message": "Found 9 links with positive obs_volume values for ODME.",
+      "field": "obs_volume",
+      "details": {
+        "volume_links_count": 9
+      }
+    },
+    {
+      "message": "ODME mode is set to 0. ODME validation will be skipped.",
+      "field": "odme_mode",
+      "details": {}
+    },
+    {
+      "message": "OD Performance statistics: 528 OD pairs, 24 origins, 24 destinations, 360600.0 total volume",
+      "field": "accessibility",
+      "details": {
+        "total_od_pairs": 528,
+        "unique_origins": 24,
+        "unique_destinations": 24,
+        "total_volume": 360600.0
+      }
+    },
+    {
+      "message": "Distance ratio statistics: Min=0.8027, Max=13.0446, Avg=4.0548, Median=3.9488",
+      "field": "accessibility_distance",
+      "details": {
+        "min_ratio": 0.802684,
+        "max_ratio": 13.0446,
+        "avg_ratio": 4.054774446969697,
+        "median_ratio": 3.94878
+      }
+    },
+    {
+      "message": "Exported 124 OD pairs with problematic distance metrics to sample_network\\problematic_od_distances.csv",
+      "field": "accessibility_distance",
+      "details": {
+        "output_file": "sample_network\\problematic_od_distances.csv"
+      }
+    },
+    {
+      "message": "Accessibility metrics: Avg destinations per origin = 22.0, Avg origins per destination = 22.0",
+      "field": "accessibility",
+      "details": {
+        "avg_accessible_destinations": 22.0,
+        "avg_reachable_origins": 22.0
+      }
+    },
+    {
+      "message": "Route assignment statistics: 1444 routes for 528 OD pairs (avg 2.73 routes per OD)",
+      "field": "route_assignment",
+      "details": {
+        "total_routes": 1444,
+        "unique_od_pairs": 528,
+        "avg_routes_per_od": 2.734848484848485
+      }
+    },
+    {
+      "message": "Found 419 OD pairs (79.4%) with multiple route choices",
+      "field": "route_assignment",
+      "details": {
+        "multiple_route_count": 419,
+        "multiple_route_percent": 79.35606060606061
+      }
+    },
+    {
+      "message": "Average congestion ratio (travel time / free flow time): 2.11",
+      "field": "route_assignment",
+      "details": {
+        "avg_congestion": 2.1133964128979064
+      }
+    },
+    {
+      "message": "Assignment metrics: Total volume = 883800.2, VMT = 3445708.5 vehicle-miles, VHT = 125131.2 vehicle-hours, Avg speed = 27.5 mph",
+      "field": "assignment",
+      "details": {
+        "total_volume": 883800.1910000001,
+        "total_vmt": 3445708.4962710002,
+        "total_vht": 125131.157092,
+        "avg_speed": 27.536774823696526
+      }
+    },
+    {
+      "message": "Link speed statistics: Average = 34.1 mph, Range = 8.1 - 60.0 mph",
+      "field": "assignment",
+      "details": {
+        "avg_link_speed_mph": 34.14050657894737,
+        "min_link_speed_mph": 8.0846,
+        "max_link_speed_mph": 59.9914
+      }
+    },
+    {
+      "message": "Observed volume comparison: R\u00b2 = 0.994, RMSE = 485.4, MAPE = 5.9%, 44.4% of links with GEH < 5",
+      "field": "obs_volume",
+      "details": {
+        "r_squared": 0.9942118634232279,
+        "correlation": 0.9971017317321377,
+        "rmse": 485.40291862825524,
+        "mape": 5.860509244478038,
+        "geh_under_5_percent": 44.44444444444444,
+        "volume_gap": 3.1906096509508437,
+        "n_points": 9,
+        "total_assigned": 89182.8976,
+        "total_reference": 92122.15599999999
+      }
+    },
+    {
+      "message": "Reference volume comparison: R\u00b2 = 0.990, RMSE = 472.7, MAPE = 3.1%, 77.6% of links with GEH < 5",
+      "field": "reference_volume",
+      "details": {
+        "r_squared": 0.9901529165953455,
+        "correlation": 0.9950642776199664,
+        "rmse": 472.6916694601257,
+        "mape": 3.100639843894361,
+        "geh_under_5_percent": 77.63157894736842,
+        "volume_gap": 0.08403136901745728,
+        "n_points": 76,
+        "total_assigned": 883800.1910000001,
+        "total_reference": 884543.4850000003
+      }
+    },
+    {
+      "message": "Doc statistics: Average = 1.47, Max = 2.56, 17.1% of links have severe congestion (doc > 2)",
+      "field": "assignment",
+      "details": {
+        "avg_doc": 1.4714026315789475,
+        "max_doc": 2.5579,
+        "severe_congestion_percent": 17.105263157894736
+      }
+    },
+    {
+      "message": "Congestion duration statistics: Average = 1.47 hours, Max = 2.56 hours, 100.0% of links have congestion (P > 0)",
+      "field": "assignment",
+      "details": {
+        "avg_p": 1.4713979210526318,
+        "max_p": 2.557919,
+        "congested_links_percent": 100.0
+      }
+    },
+    {
+      "message": "Route assignment statistics: 1444 routes for 528 OD pairs (avg 2.73 routes per OD)",
+      "field": "route_assignment",
+      "details": {
+        "total_routes": 1444,
+        "unique_od_pairs": 528,
+        "avg_routes_per_od": 2.734848484848485
+      }
+    },
+    {
+      "message": "Found 419 OD pairs (79.4%) with multiple route choices",
+      "field": "route_assignment",
+      "details": {
+        "multiple_route_count": 419,
+        "multiple_route_percent": 79.35606060606061
+      }
+    },
+    {
+      "message": "Average congestion ratio (travel time / free flow time): 2.11",
+      "field": "route_assignment",
+      "details": {
+        "avg_congestion": 2.1133964128979064
+      }
+    }
+  ],
+  "metadata": {
+    "node_file": "sample_network\\node.csv",
+    "link_file": "sample_network\\link.csv",
+    "demand_file": "sample_network\\demand.csv",
+    "validation_time": "2025-03-28 00:16:17",
+    "node_count": 24,
+    "link_count": 76,
+    "demand_count": 576
+  },
+  "field_statistics": {
+    "node": {
+      "node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "x_coord": {
+        "min": -96.79337655,
+        "max": -96.69342281,
+        "mean": -96.73410001458335,
+        "null_count": 0
+      },
+      "y_coord": {
+        "min": 43.49070718,
+        "max": 43.61282792,
+        "mean": 43.545310557083326,
+        "null_count": 0
+      },
+      "district_id": {
+        "min": 1.0,
+        "max": 2.0,
+        "mean": 1.5,
+        "null_count": 22
+      }
+    },
+    "link": {
+      "name": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "link_id": {
+        "min": 1.0,
+        "max": 76.0,
+        "mean": 38.5,
+        "null_count": 0
+      },
+      "from_node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 13.013157894736842,
+        "null_count": 0
+      },
+      "to_node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 13.013157894736842,
+        "null_count": 0
+      },
+      "dir_flag": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "length": {
+        "min": 3218.0,
+        "max": 16090.0,
+        "mean": 6647.710526315789,
+        "null_count": 0
+      },
+      "vdf_length_mi": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 4.131578947368421,
+        "null_count": 0
+      },
+      "lanes": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "capacity": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526,
+        "null_count": 0
+      },
+      "free_speed": {
+        "min": 96.54,
+        "max": 96.54,
+        "mean": 96.53999999999999,
+        "null_count": 0
+      },
+      "vdf_free_speed_mph": {
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "null_count": 0
+      },
+      "link_type": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "vdf_alpha": {
+        "min": 0.15,
+        "max": 0.15,
+        "mean": 0.15,
+        "null_count": 0
+      },
+      "vdf_beta": {
+        "min": 4.0,
+        "max": 4.0,
+        "mean": 4.0,
+        "null_count": 0
+      },
+      "ref_volume": {
+        "min": 5083.214,
+        "max": 22484.834,
+        "mean": 11638.730065789474,
+        "null_count": 0
+      },
+      "obs_volume": {
+        "min": 5083.214,
+        "max": 18945.744,
+        "mean": 10235.79511111111,
+        "null_count": 67
+      },
+      "vdf_fftt": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 4.131578947368421,
+        "null_count": 0
+      },
+      "vdf_toll": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "geometry": {
+        "unique_values": 76,
+        "null_count": 0
+      },
+      "capacity_per_lane": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526,
+        "null_count": 0
+      }
+    },
+    "demand": {
+      "o_zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "d_zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "volume": {
+        "min": 0.0,
+        "max": 4400.0,
+        "mean": 626.0416666666666,
+        "null_count": 0
+      }
+    }
+  }
+}

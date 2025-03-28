@@ -1,0 +1,410 @@
+{
+  "summary": {
+    "total": 32,
+    "errors": 5,
+    "warnings": 11,
+    "success": 5,
+    "info": 11
+  },
+  "errors": [
+    {
+      "message": "Found 76 links with missing vdf_fftt values",
+      "field": "vdf_fftt",
+      "details": {}
+    },
+    {
+      "message": "Missing required VDF parameter field: vdf_length_mi",
+      "field": "vdf_length_mi",
+      "details": {}
+    },
+    {
+      "message": "Missing required VDF parameter field: vdf_free_speed_mph",
+      "field": "vdf_free_speed_mph",
+      "details": {}
+    },
+    {
+      "message": "Missing required fields in link file: vdf_plf",
+      "field": null,
+      "details": {
+        "missing_fields": [
+          "vdf_plf"
+        ]
+      }
+    },
+    {
+      "message": "settings.csv not found. Required for ODME configuration.",
+      "field": "settings",
+      "details": {}
+    }
+  ],
+  "warnings": [
+    {
+      "message": "mode_type.csv file not found",
+      "field": "mode_type",
+      "details": {}
+    },
+    {
+      "message": "settings.csv file not found",
+      "field": "settings",
+      "details": {}
+    },
+    {
+      "message": "Average link length (4.13) is very small; may not be in meters",
+      "field": "length",
+      "details": {
+        "mean": 4.131578947368421,
+        "min": 2,
+        "max": 10
+      }
+    },
+    {
+      "message": "Found 52 links with unusually high hourly capacity (>3000)",
+      "field": "capacity",
+      "details": {
+        "high_capacity_count": 52,
+        "example_links": [
+          1,
+          2,
+          3,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "message": "Found 76 links with unusually high capacity per lane (>2500)",
+      "field": "capacity",
+      "details": {
+        "high_cap_per_lane_count": 76,
+        "example_links": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "message": "Link type 1 has large capacity variation (min=4823.950831, max=25900.20064)",
+      "field": "capacity",
+      "details": {
+        "link_type": 1,
+        "capacity_min": 4823.950831,
+        "capacity_max": 25900.20064,
+        "capacity_mean": 10247.206327210526,
+        "count": 76.0
+      }
+    },
+    {
+      "message": "Found 48 demand records with zero or negative volume",
+      "field": "volume",
+      "details": {
+        "invalid_volume_count": 48
+      }
+    },
+    {
+      "message": "Missing 'obs_volume' field in link file. This is required for ODME.",
+      "field": "obs_volume",
+      "details": {}
+    },
+    {
+      "message": "od_performance.csv not found. Cannot perform accessibility validation.",
+      "field": "accessibility",
+      "details": {}
+    },
+    {
+      "message": "link_performance.csv not found. Cannot perform assignment validation.",
+      "field": "assignment",
+      "details": {}
+    },
+    {
+      "message": "link.csv not found. Cannot perform validation.",
+      "field": "link",
+      "details": {}
+    }
+  ],
+  "success": [
+    {
+      "message": "Nodes are correctly sorted by node_id in ascending order",
+      "field": "node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by from_node_id in ascending order",
+      "field": "from_node_id",
+      "details": {}
+    },
+    {
+      "message": "Links are correctly sorted by to_node_id within from_node_id groups",
+      "field": "to_node_id",
+      "details": {}
+    },
+    {
+      "message": "All zones in demand file exist in node file",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "Traffic assignment validation (Level 7) completed successfully",
+      "field": "level_7",
+      "details": {}
+    }
+  ],
+  "info": [
+    {
+      "message": "Capacity values range from 4823.950831 to 25900.20064 (mean: 10247.21)",
+      "field": "capacity",
+      "details": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526
+      }
+    },
+    {
+      "message": "Field 'district_id' in node file contains 22 null/empty values",
+      "field": "district_id",
+      "details": {}
+    },
+    {
+      "message": "Field 'name' in node file contains 24 null/empty values",
+      "field": "name",
+      "details": {}
+    },
+    {
+      "message": "Field 'vdf_fftt' in link file contains 76 null/empty values",
+      "field": "vdf_fftt",
+      "details": {}
+    },
+    {
+      "message": "Found 24 zone centroids out of 24 total nodes",
+      "field": "zone_id",
+      "details": {}
+    },
+    {
+      "message": "No physical nodes found, network contains only zone centroids",
+      "field": "node_id",
+      "details": {}
+    },
+    {
+      "message": "Identified 0 connector links between zone centroids and physical nodes",
+      "field": "link_id",
+      "details": {
+        "connector_count": 0
+      }
+    },
+    {
+      "message": "Found 76 links directly connecting zone centroids to other zone centroids",
+      "field": "link_id",
+      "details": {
+        "centroid_links_count": 76
+      }
+    },
+    {
+      "message": "Found 24 demand records with same origin and destination zone",
+      "field": "o_zone_id",
+      "details": {
+        "self_loop_count": 24
+      }
+    },
+    {
+      "message": "route_assignment.csv not found. Will only use od_performance.csv for accessibility checks.",
+      "field": "accessibility",
+      "details": {}
+    },
+    {
+      "message": "route_assignment.csv not found. Will only use link_performance.csv for assignment checks.",
+      "field": "assignment",
+      "details": {}
+    }
+  ],
+  "metadata": {
+    "node_file": ".\\14_Sioux_Falls\\minimum_input\\node.csv",
+    "link_file": ".\\14_Sioux_Falls\\minimum_input\\link.csv",
+    "demand_file": ".\\14_Sioux_Falls\\minimum_input\\demand.csv",
+    "validation_time": "2025-03-20 13:27:37",
+    "node_count": 24,
+    "link_count": 76,
+    "demand_count": 576
+  },
+  "field_statistics": {
+    "node": {
+      "name": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 24
+      },
+      "node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "x_coord": {
+        "min": -96.79337655,
+        "max": -96.69342281,
+        "mean": -96.73410001458335,
+        "null_count": 0
+      },
+      "y_coord": {
+        "min": 43.49070718,
+        "max": 43.61282792,
+        "mean": 43.545310557083326,
+        "null_count": 0
+      },
+      "district_id": {
+        "min": 1.0,
+        "max": 2.0,
+        "mean": 1.5,
+        "null_count": 22
+      }
+    },
+    "link": {
+      "name": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "link_id": {
+        "min": 1.0,
+        "max": 76.0,
+        "mean": 38.5,
+        "null_count": 0
+      },
+      "from_node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 13.013157894736842,
+        "null_count": 0
+      },
+      "to_node_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 13.013157894736842,
+        "null_count": 0
+      },
+      "dir_flag": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "length": {
+        "min": 2.0,
+        "max": 10.0,
+        "mean": 4.131578947368421,
+        "null_count": 0
+      },
+      "lanes": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "capacity": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526,
+        "null_count": 0
+      },
+      "free_speed": {
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "null_count": 0
+      },
+      "link_type": {
+        "min": 1.0,
+        "max": 1.0,
+        "mean": 1.0,
+        "null_count": 0
+      },
+      "vdf_alpha": {
+        "min": 0.15,
+        "max": 0.15,
+        "mean": 0.15,
+        "null_count": 0
+      },
+      "vdf_beta": {
+        "min": 4.0,
+        "max": 4.0,
+        "mean": 4.0,
+        "null_count": 0
+      },
+      "ref_volume": {
+        "min": 5083.214,
+        "max": 22484.834,
+        "mean": 11638.730065789474,
+        "null_count": 0
+      },
+      "base_volume": {
+        "min": 4799.409,
+        "max": 23194.335,
+        "mean": 11761.177738157894,
+        "null_count": 0
+      },
+      "base_vol_auto": {
+        "min": 4799.409,
+        "max": 23194.335,
+        "mean": 11761.177738157894,
+        "null_count": 0
+      },
+      "restricted_turn_nodes": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "vdf_fftt": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "vdf_toll_auto": {
+        "min": NaN,
+        "max": NaN,
+        "mean": NaN,
+        "null_count": 76
+      },
+      "geometry": {
+        "unique_values": 76,
+        "null_count": 0
+      },
+      "capacity_per_lane": {
+        "min": 4823.950831,
+        "max": 25900.20064,
+        "mean": 10247.206327210526,
+        "null_count": 0
+      }
+    },
+    "demand": {
+      "o_zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "d_zone_id": {
+        "min": 1.0,
+        "max": 24.0,
+        "mean": 12.5,
+        "null_count": 0
+      },
+      "volume": {
+        "min": 0.0,
+        "max": 4400.0,
+        "mean": 626.0416666666666,
+        "null_count": 0
+      }
+    }
+  }
+}
