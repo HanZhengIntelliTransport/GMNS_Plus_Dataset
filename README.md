@@ -1,6 +1,6 @@
-# GMNS Global Dataset
+# GMNS Plus Dataset
 
-The **GMNS Global Dataset** is a publicly available, standardized transportation network collection based on the [General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS). This project aims to support reproducible and comparable research in transportation modeling, planning, and analysis.
+The **GMNS Plus Dataset** is a publicly available, standardized transportation network collection based on the [General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS). This project aims to support reproducible and comparable research in transportation modeling, planning, and analysis.
 
 Led by **Dr. Xuesong (Simon) Zhou** (xzhou74@asu.edu) at **Arizona State University (ASU)**, the project is supported by the **National Science Foundation (NSF)** under the following initiative:
 
