@@ -2,7 +2,7 @@
 
 The **GMNS Plus Dataset** is a publicly available, standardized transportation network collection based on the [General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS). This project aims to support reproducible and comparable research in transportation modeling, planning, and analysis.
 
-Led by NSF POSE Team from **Arizona State University (ASU)**, the project is supported by the **National Science Foundation (NSF)** under the following initiative:
+Led by **NSF POSE Team from Arizona State University (ASU)**, the project is supported by the **National Science Foundation (NSF)** under the following initiative:
 
 > **POSE: Phase II: CONNECT**  
 > *[Consortium of Open-source plaNNing models for Next-generation Equitable and efficient Communities and Transportation](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2303748&HistoricalAwards=false)*  
