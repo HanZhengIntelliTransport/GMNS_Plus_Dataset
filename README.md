@@ -2,10 +2,10 @@
 
 The **GMNS Plus Dataset** is a publicly available, standardized transportation network collection based on the [General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS). This project aims to support reproducible and comparable research in transportation modeling, planning, and analysis.
 
-Led by **Dr. Xuesong (Simon) Zhou** (xzhou74@asu.edu) at **Arizona State University (ASU)**, the project is supported by the **National Science Foundation (NSF)** under the following initiative:
+Led by NSF POSE Team from **Arizona State University (ASU)**, the project is supported by the **National Science Foundation (NSF)** under the following initiative:
 
 > **POSE: Phase II: CONNECT**  
-> *Consortium of Open-source plaNNing models for Next-generation Equitable and efficient Communities and Transportation*  
+> *[Consortium of Open-source plaNNing models for Next-generation Equitable and efficient Communities and Transportation](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2303748&HistoricalAwards=false)*  
 > **Award #: 2303748**
 
 The dataset currently includes networks from a diverse set of cities and regions around the world:
@@ -75,10 +75,9 @@ This process includes:
 
 This alignment enables consistent data handling, easier model integration, and improved reproducibility across research projects.
 
-## Multi-Level Data Validation Framework
+## Multi-Level Modeling Readiness and Validation Framework
 
-To ensure quality, consistency, and usability across all networks, the Global Dataset project introduces a standardized **multi-level validation framework**. This framework helps guarantee that each dataset meets baseline standards for structural integrity, model-readiness, and performance analysis.
-
+To guarantee both structural integrity and modeling usability, the Global Dataset project introduces a standardized multi-level modeling readiness and validation framework. This framework ensures that each dataset is not only complete and internally consistent but also fully prepared for simulation, performance analysis, and data-driven applications. From basic file checks to ODME preparation and traffic assignment validation, each level addresses a key aspect of model-readiness, offering a systematic path from raw data to reliable outputs.
 ### 🔍 Level 1: Basic Data File Validation
 - **File Existence**: Confirms that `node.csv` and `link.csv` files exist and are readable.
 - **Required Fields & Data Types**: Verifies essential fields (e.g., `node_id`, `link_id`) and their data types (e.g., integers for IDs, floats for coordinates or speeds).
