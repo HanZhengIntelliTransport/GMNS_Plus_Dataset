@@ -709,7 +709,7 @@ class GMNSValidator:
             return
 
         # Load link_performance.csv and check for volume
-        df_performance = pd.read_csv(link_performance_file)
+        df_performance = pd.read_csv(link_performance_file, low_memory=False)
         if "volume" not in df_performance.columns or df_performance["volume"].isna().all():
             self.results.append(
                 ValidationResult(
@@ -940,7 +940,7 @@ class GMNSValidator:
         """
         try:
             # Load link performance data
-            link_perf_df = pd.read_csv(link_performance_file)
+            link_perf_df = pd.read_csv(link_performance_file,low_memory=False) #TODO
             
             # Check for required columns based on your file structure
             required_columns = ["link_id", "volume", "travel_time"]
@@ -1324,7 +1324,7 @@ class GMNSValidator:
 
                 # Create CSV output with problem links
                 try:
-                    output_file = "problem_volume_links.csv"
+                    output_file = os.path.join(self.working_path,"problem_volume_links.csv")
                     sorted_diff.to_csv(output_file, index=False)
                     print(f"\nLinks with large volume differences written to {output_file}")
 
@@ -1507,13 +1507,20 @@ class GMNSValidator:
                 )
 
             # Identify links with very large differences
-            large_diff = volume_comparison[abs(volume_comparison["volume"] - volume_comparison["ref_volume"]) / volume_comparison["ref_volume"] > 1.0]
+            large_diff = volume_comparison[
+                abs(volume_comparison["volume"] - volume_comparison["ref_volume"]) / volume_comparison[
+                    "ref_volume"] > 1.0
+                ].copy()  # <-- 添加 .copy() 以避免 SettingWithCopyWarning
+
             if not large_diff.empty:
                 large_diff_count = len(large_diff)
                 large_diff_percent = 100 * large_diff_count / n_points
 
                 # Sort by difference percentage
-                large_diff['diff_pct'] = abs(large_diff["volume"] - large_diff["ref_volume"]) / large_diff["ref_volume"] * 100
+                large_diff['diff_pct'] = (
+                        abs(large_diff["volume"] - large_diff["ref_volume"]) / large_diff["ref_volume"] * 100
+                )
+
                 sorted_diff = large_diff.sort_values('diff_pct', ascending=False)
 
                 self.results.append(
@@ -1532,7 +1539,7 @@ class GMNSValidator:
 
                 # Create CSV output with problem links
                 try:
-                    output_file = "problem_volume_links.csv"
+                    output_file = os.path.join(self.working_path,"problem_volume_links.csv")
                     sorted_diff.to_csv(output_file, index=False)
                     print(f"\nLinks with large volume differences written to {output_file}")
 

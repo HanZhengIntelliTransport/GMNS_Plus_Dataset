@@ -26,11 +26,18 @@ The dataset currently includes networks from a diverse set of cities and regions
 13_Phoenix  
 14_Sioux_Falls  
 15_Sydney
+16_San_Francisco
 ```
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
 
+## 04/02/2025 Log Update
 
+- Added `16_San_Francisco` network, sourced from [*A unified dataset for the city-scale traffic assignment model in 20 U.S. cities*](https://www.nature.com/articles/s41597-024-03149-8).
+- For detailed update notes, please refer to the shared document:  
+  [Update Notes - San Francisco Network](https://docs.google.com/document/d/16bntW9nyxsbYZMI8PWNK5vrUVDBryEpe7b39NsaAWYw/edit?tab=t.0)
+
+  
 ## Network Generation from OpenStreetMap Tools
 
 Many of the networks in this dataset—such as **13_Phoenix**—are generated using a set of open-source tools, including [OSM2GMNS](https://osm2gmns.readthedocs.io/en/latest/index.html). These tools convert OpenStreetMap (OSM) data into GMNS-compliant formats, allowing for automated, transparent, and scalable network generation.
