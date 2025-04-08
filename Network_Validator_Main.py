@@ -110,7 +110,7 @@ def ReadinessChecking(working_path):
 
 
 if __name__ == "__main__":
-    subdirectories = get_all_directories('11_GoldCoast')
+    subdirectories = get_all_directories('16_San_Francisco')
     #subdirectories = get_all_directories(r'16_Sydney')
     print("Subdirectories:")
     for subdir in subdirectories:

@@ -16,7 +16,7 @@ The dataset currently includes networks from a diverse set of cities and regions
 03_Berlin-Friedrichshain  
 04_Berlin-Mitte-Center  
 05_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center  
-06_Berlin-Prenzlauerberg-Center
+06_Berlin-Prenzlauerberg-Center  
 07_Berlin-Tiergarten  
 08_Birmingham-England  
 09_Chicago_Regional  
@@ -25,11 +25,35 @@ The dataset currently includes networks from a diverse set of cities and regions
 12_Philadelphia  
 13_Phoenix  
 14_Sioux_Falls  
-15_Sydney
-16_San_Francisco
+15_Sydney  
+16_San_Francisco  
+17_Atlanta  
+18_Seattle  
+19_Portland  
+20_Denver  
+21_Las_Vegas  
+22_Chicago  
+23_Honolulu  
+24_New_Orleans  
+25_Austin  
+26_Minneapolis  
+27_Dallas  
+28_Milwaukee  
+29_New_York  
+30_Washington  
+31_Boston  
+32_Philadelphia  
+33_Pittsburgh  
+34_Miami 
 ```
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
+## 04/07/2025 Log Update
+
+- Added 18 new networks, including:
+17_Atlanta, 18_Seattle, 19_Portland, 20_Denver, 21_Las_Vegas, 22_Chicago, 23_Honolulu, 24_New_Orleans, 25_Austin, 26_Minneapolis, 27_Dallas, 28_Milwaukee, 29_New_York, 30_Washington, 31_Boston, 32_Philadelphia, 33_Pittsburgh, and 34_Miami.
+These additions further enrich the geographic diversity of the dataset and support more comprehensive transportation research across various urban settings.
+
 
 ## 04/02/2025 Log Update
 
@@ -140,7 +164,7 @@ In addition to the datasets and validation framework, this repository also provi
 These tools work together to streamline the process of data verification, simulation readiness, and visual inspection of network structures.
 
 
-## How to Use the Multi-Level Validation Tool
+## How to Use the Multi-Level Modeling Readiness and Validation Tool
 
 You can run the **multi-level data validation process** using the script `Network_Validator_Main.py`.
 
