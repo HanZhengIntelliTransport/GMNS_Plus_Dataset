@@ -45,7 +45,8 @@ def use_python_DTALite(working_path,template_path):
     NEXTA_src = os.path.join(template_path, NEXTA_file)
     csv_dest = os.path.join(working_path, csv_file)
     NEXTA_dest = os.path.join(working_path, NEXTA_file)
-    shutil.copy(NEXTA_src, NEXTA_dest)
+    if os.path.exists(NEXTA_src):
+        shutil.copy(NEXTA_src, NEXTA_dest)
     shutil.copy(csv_src, csv_dest)
 
     print(f"Copied {csv_file} and {NEXTA_file} to {working_path}")
