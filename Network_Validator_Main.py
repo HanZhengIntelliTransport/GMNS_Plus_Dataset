@@ -109,10 +109,14 @@ def ReadinessChecking(working_path):
         return 1
 
 
-if __name__ == "__main__":
-    subdirectories = get_all_directories('16_San_Francisco')
-    #subdirectories = get_all_directories(r'16_Sydney')
+def main(network_name='.'):
+    subdirectories = get_all_directories(network_name)
+    # subdirectories = get_all_directories(r'16_Sydney')
     print("Subdirectories:")
     for subdir in subdirectories:
         print(subdir)
         ReadinessChecking(subdir)
+
+
+if __name__ == "__main__":
+    main('16_San_Francisco')
