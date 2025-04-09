@@ -1,5 +1,5 @@
 # GMNS Plus Dataset
-![](GMNS_Tools/logo.png)
+![](GMNS_Tools/Logo.png)
 
 The **GMNS Plus Dataset** is a publicly available, standardized transportation network collection based on the [General Modeling Network Specification (GMNS)](https://github.com/zephyr-data-specs/GMNS). This project aims to support reproducible and comparable research in transportation modeling, planning, and analysis.
 
