@@ -4428,4 +4428,3 @@ class GMNSValidator:
                     field="route_assignment"
                 )
             )
-    
