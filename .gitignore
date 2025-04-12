@@ -1,0 +1,14 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Environment
+.env
+.venv

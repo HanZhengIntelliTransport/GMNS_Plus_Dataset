@@ -13,42 +13,50 @@ The dataset currently includes networks from a diverse set of cities and regions
 
 ```
 01_Anaheim  
-02_Berlin-Center  
-03_Berlin-Friedrichshain  
-04_Berlin-Mitte-Center  
-05_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center  
-06_Berlin-Prenzlauerberg-Center  
-07_Berlin-Tiergarten  
-08_Birmingham-England  
-09_Chicago_Regional  
-10_Chicago_Sketch  
-11_GoldCoast  
-12_Philadelphia  
-13_Phoenix  
-14_Sioux_Falls  
-15_Sydney  
-16_San_Francisco  
-17_Atlanta  
-18_Seattle  
-19_Portland  
-20_Denver  
-21_Las_Vegas  
-22_Chicago  
-23_Honolulu  
-24_New_Orleans  
-25_Austin  
-26_Minneapolis  
-27_Dallas  
-28_Milwaukee  
-29_New_York  
-30_Washington  
-31_Boston  
-32_Philadelphia  
-33_Pittsburgh  
-34_Miami 
+02_Atlanta  
+03_Austin  
+04_Berlin-Center  
+05_Berlin-Friedrichshain  
+06_Berlin-Mitte-Center  
+07_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center  
+08_Berlin-Prenzlauerberg-Center  
+09_Berlin-Tiergarten  
+10_Birmingham-England  
+11_Boston  
+12_Chicago_PolyU  
+13_Chicago_Regional  
+14_Chicago_Sketch  
+15_Dallas  
+16_Denver  
+17_GoldCoast  
+18_Honolulu  
+19_Las_Vegas  
+20_Miami  
+21_Milwaukee  
+22_Minneapolis  
+23_New_Orleans  
+24_New_York  
+25_Philadelphia_PolyU  
+26_Philadelphia_TNTP  
+27_Phoenix_Metropolitan_Area  
+28_Phoenix_City  
+29_Phoenix_City_PolyU  
+30_Pittsburgh  
+31_Portland  
+32_San_Francisco  
+33_Seattle  
+34_Sioux_Falls  
+35_Sydney  
+36_Washington_DC  
 ```
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
+
+## 04/07/2025 Log Update
+
+- Reorganized all network folders into a consistent and sequential order for easier access and management.
+- Added a new [Colab notebook](https://colab.research.google.com/drive/1VugIavOnZWLd0tXGWDXmFLdkUTYgjDR1#scrollTo=aIiQvw22Yy_u), which includes four optimization problems related to the network data. These problems cover: (1) Shortest Path Problem, (2) Facility Location Problem, (3) Traffic Assigment Problem, (4) OD Matrix Estimation (ODME).
+
 ## 04/07/2025 Log Update
 
 - Added 18 new networks, including:
