@@ -12,49 +12,50 @@ Led by **NSF POSE Team from Arizona State University (ASU)**, the project is sup
 The dataset currently includes networks from a diverse set of cities and regions around the world:
 
 ```
-01_Anaheim  
-02_Atlanta  
-03_Austin  
-04_Berlin-Center  
-05_Berlin-Friedrichshain  
-06_Berlin-Mitte-Center  
-07_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center  
-08_Berlin-Prenzlauerberg-Center  
-09_Berlin-Tiergarten  
-10_Birmingham-England  
-11_Boston  
-12_Chicago_PolyU  
-13_Chicago_Regional  
-14_Chicago_Sketch  
-15_Dallas  
-16_Denver  
-17_GoldCoast  
-18_Honolulu  
-19_Las_Vegas  
-20_Miami  
-21_Milwaukee  
-22_Minneapolis  
-23_New_Orleans  
-24_New_York  
-25_Philadelphia_PolyU  
-26_Philadelphia_TNTP  
-27_Phoenix_Metropolitan_Area  
-28_Phoenix_City  
-29_Phoenix_City_PolyU  
-30_Pittsburgh  
-31_Portland  
-32_San_Francisco  
-33_Seattle  
-34_Sioux_Falls  
-35_Sydney  
-36_Washington_DC  
+01_Anaheim
+02_Atlanta
+03_Austin
+04_Berlin-Center
+05_Berlin-Friedrichshain
+06_Berlin-Mitte-Center
+07_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center
+08_Berlin-Prenzlauerberg-Center
+09_Berlin-Tiergarten
+10_Birmingham-England
+11_Boston
+12_Chicago_PolyU
+13_Chicago_Regional
+14_Chicago_Sketch
+15_Dallas
+16_Denver
+17_GoldCoast
+18_Honolulu
+19_Las_Vegas
+20_Miami
+21_Milwaukee
+22_Minneapolis
+23_New_Orleans
+24_New_York
+25_Philadelphia_PolyU
+26_Philadelphia_TNTP
+27_Phoenix_Metropolitan_Area
+28_Phoenix_City
+29_Phoenix_City_PolyU
+30_Pittsburgh
+31_Portland
+32_San_Francisco
+33_Seattle
+34_Sioux_Falls
+35_Sydney
+36_Washington_DC
 ```
+![](GMNS_Tools/country_maps/Geospatial_Distribution.png)
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
 
-## 04/07/2025 Log Update
+## 04/11/2025 Log Update
 
-- Reorganized all network folders into a consistent and sequential order for easier access and management.
+- Reorganized all networks into a consistent and sequential order for easier access and management.
 - Added a new [Colab notebook](https://colab.research.google.com/drive/1VugIavOnZWLd0tXGWDXmFLdkUTYgjDR1#scrollTo=aIiQvw22Yy_u), which includes four optimization problems related to the network data. These problems cover: (1) Shortest Path Problem, (2) Facility Location Problem, (3) Traffic Assigment Problem, (4) OD Matrix Estimation (ODME).
 
 ## 04/07/2025 Log Update
