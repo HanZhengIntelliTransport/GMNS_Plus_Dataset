@@ -1,6 +1,6 @@
-# Global_Dataset Environment Setup
+# GMNS+ Dataset Environment Setup
 
-This guide will help you set up the `Global_Dataset` Conda environment, install required dependencies, and run the project.
+This guide will help you set up the `GMNS+ Dataset` Conda environment, install required dependencies, and run the project.
 
 ---
 
@@ -10,10 +10,10 @@ Open your terminal and run the following commands:
 
 ```bash
 # Create a new conda environment named Global_Dataset with Python 3.12
-conda create -n Global_Dataset python=3.12 -y
+conda create -n GMNS_Plus_Dataset python=3.12 -y
 
 # Activate the environment
-conda activate Global_Dataset
+conda activate GMNS_Plus_Dataset
 ```
 
 ---
@@ -56,7 +56,7 @@ When you're done, you can deactivate or remove the environment:
 conda deactivate
 
 # Remove the environment (optional)
-conda remove -n Global_Dataset --all
+conda remove -n GMNS_Plus_Dataset --all
 ```
 
 ---

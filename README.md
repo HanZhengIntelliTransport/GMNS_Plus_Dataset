@@ -64,14 +64,12 @@ These networks are formatted in GMNS to enable consistency, interoperability, an
 17_Atlanta, 18_Seattle, 19_Portland, 20_Denver, 21_Las_Vegas, 22_Chicago, 23_Honolulu, 24_New_Orleans, 25_Austin, 26_Minneapolis, 27_Dallas, 28_Milwaukee, 29_New_York, 30_Washington, 31_Boston, 32_Philadelphia, 33_Pittsburgh, and 34_Miami.
 These additions further enrich the geographic diversity of the dataset and support more comprehensive transportation research across various urban settings.
 
-
 ## 04/02/2025 Log Update
 
 - Added `16_San_Francisco` network, sourced from [*A unified dataset for the city-scale traffic assignment model in 20 U.S. cities*](https://www.nature.com/articles/s41597-024-03149-8).
 - For detailed update notes, please refer to the shared document:  
   [Update Notes - San Francisco Network](https://docs.google.com/document/d/16bntW9nyxsbYZMI8PWNK5vrUVDBryEpe7b39NsaAWYw/edit?tab=t.0)
 
-  
 ## Network Generation from OpenStreetMap Tools
 
 Many of the networks in this dataset—such as **13_Phoenix**—are generated using a set of open-source tools, including [OSM2GMNS](https://osm2gmns.readthedocs.io/en/latest/index.html). These tools convert OpenStreetMap (OSM) data into GMNS-compliant formats, allowing for automated, transparent, and scalable network generation.
@@ -82,8 +80,7 @@ Looking ahead, the project aims to scale this effort to cover:
 - **All 50 U.S. states and the District of Columbia**
 - **Major international metropolitan areas**, including **Tokyo**
 
-This expansion will further support global transportation research with standardized, high-quality network data.
-
+This expansion will further support GMNS+ transportation research with standardized, high-quality network data.
 
 ## TNTP-to-GMNS Conversion and Standardization
 
@@ -118,7 +115,7 @@ This alignment enables consistent data handling, easier model integration, and i
 
 ## Multi-Level Modeling Readiness and Validation Framework
 
-To guarantee both structural integrity and modeling usability, the Global Dataset project introduces a standardized multi-level modeling readiness and validation framework. This framework ensures that each dataset is not only complete and internally consistent but also fully prepared for simulation, performance analysis, and data-driven applications. From basic file checks to ODME preparation and traffic assignment validation, each level addresses a key aspect of model-readiness, offering a systematic path from raw data to reliable outputs.
+To guarantee both structural integrity and modeling usability, the GMNS+ Dataset project introduces a standardized multi-level modeling readiness and validation framework. This framework ensures that each dataset is not only complete and internally consistent but also fully prepared for simulation, performance analysis, and data-driven applications. From basic file checks to ODME preparation and traffic assignment validation, each level addresses a key aspect of model-readiness, offering a systematic path from raw data to reliable outputs.
 ### 🔍 Level 1: Basic Data File Validation
 - **File Existence**: Confirms that `node.csv` and `link.csv` files exist and are readable.
 - **Required Fields & Data Types**: Verifies essential fields (e.g., `node_id`, `link_id`) and their data types (e.g., integers for IDs, floats for coordinates or speeds).
