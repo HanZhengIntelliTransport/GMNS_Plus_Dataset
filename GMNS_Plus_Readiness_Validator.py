@@ -76,7 +76,7 @@ def copy_and_run_exe(working_path, template_path):
         print(f"Working path: {working_path}")
 
         # Specify the .exe and .csv files
-        DTALite_file = "TAPLite_0322_2025.exe"
+        DTALite_file = "TAPLite_0422_2025.exe"
         NEXTA_file= "NEXTA.exe"
         csv_file = "settings.csv"
         #mode_csv_file = "mode_type.csv"
