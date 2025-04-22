@@ -52,19 +52,28 @@ The dataset currently includes networks from a diverse set of cities and regions
 ![](GMNS_Tools/country_maps/Geospatial_Distribution.png)
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
+![](GMNS_Tools/country_maps/36cities.jpg)
 
-## 04/11/2025 Log Update
+## Optimization Models
+- The GMNS+ has a set of optimization models on [Colab notebook](https://colab.research.google.com/drive/1VugIavOnZWLd0tXGWDXmFLdkUTYgjDR1#scrollTo=aIiQvw22Yy_u). These problems cover: (1) Shortest Path Problem, (2) Facility Location Problem, (3) Traffic Assigment Problem, (4) OD Matrix Estimation (ODME).
+
+## Updates
+### 04/22/2025 Update Log
+
+- Updated network list.
+
+### 04/11/2025 Update Log
 
 - Reorganized all networks into a consistent and sequential order for easier access and management.
 - Added a new [Colab notebook](https://colab.research.google.com/drive/1VugIavOnZWLd0tXGWDXmFLdkUTYgjDR1#scrollTo=aIiQvw22Yy_u), which includes four optimization problems related to the network data. These problems cover: (1) Shortest Path Problem, (2) Facility Location Problem, (3) Traffic Assigment Problem, (4) OD Matrix Estimation (ODME).
 
-## 04/07/2025 Log Update
+### 04/07/2025 Update Log
 
 - Added 18 new networks, including:
 17_Atlanta, 18_Seattle, 19_Portland, 20_Denver, 21_Las_Vegas, 22_Chicago, 23_Honolulu, 24_New_Orleans, 25_Austin, 26_Minneapolis, 27_Dallas, 28_Milwaukee, 29_New_York, 30_Washington, 31_Boston, 32_Philadelphia, 33_Pittsburgh, and 34_Miami.
 These additions further enrich the geographic diversity of the dataset and support more comprehensive transportation research across various urban settings.
 
-## 04/02/2025 Log Update
+### 04/02/2025 Update Log
 
 - Added `16_San_Francisco` network, sourced from [*A unified dataset for the city-scale traffic assignment model in 20 U.S. cities*](https://www.nature.com/articles/s41597-024-03149-8).
 - For detailed update notes, please refer to the shared document:  
