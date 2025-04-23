@@ -23,7 +23,7 @@ The dataset currently includes networks from a diverse set of cities and regions
 09_Berlin-Tiergarten
 10_Birmingham-England
 11_Boston
-12_Chicago_PolyU
+12_Chicago_Downtown
 13_Chicago_Regional
 14_Chicago_Sketch
 15_Dallas
@@ -36,11 +36,11 @@ The dataset currently includes networks from a diverse set of cities and regions
 22_Minneapolis
 23_New_Orleans
 24_New_York
-25_Philadelphia_PolyU
-26_Philadelphia_TNTP
+25_Philadelphia
+26_Paradise
 27_Phoenix_Metropolitan_Area
 28_Phoenix_City
-29_Phoenix_City_PolyU
+29_Phoenix_Walk
 30_Pittsburgh
 31_Portland
 32_San_Francisco
