@@ -88,7 +88,36 @@ These networks are formatted in GMNS to enable consistency, interoperability, an
 
 ### 01/05/2025 Update Log
 
-- Updated network list.
+#### 1. Multimodal Networks Updates
+- `1_Bay_Area_MultiModal`
+  - `1.1_Bay_Area_Driving`
+  - `1.2_Bay_Area_Cycling`
+  - `1.3_Bay_Area_Walking`
+  - `1.4_Bay_Area_Transit`
+- `2_King_County_Metropolitan_MultiModal`
+  - `2.1_King_County_Metropolitan_Driving`
+  - `2.2_King_County_Metropolitan_Cycling`
+  - `2.3_King_County_Metropolitan_Walking`
+  - `2.4_King_County_Metropolitan_Transit`
+- `3_Phoenix_City_MultiModal`
+  - `3.1_Phoenix_City_Driving`
+  - `3.2_Phoenix_City_Cycling`
+  - `3.3_Phoenix_City_Walking`
+  - `3.4_Phoenix_City_Transit`
+- `4_WashingtonDC_City_MultiModal`
+  - `4.1_WashingtonDC_City_Driving`
+  - `4.2_WashingtonDC_City_Cycling`
+  - `4.3_WashingtonDC_City_Walking`
+  - `4.4_WashingtonDC_City_Transit`
+- `39_Planning Networks for NVTA`
+  - `39.1_NVTA_Full_Network`
+  - `39.2_NVTA_Subarea_Network`
+- `40_State_level_Networks_MultiModal_USA`
+- `41_Railway_Network_USA`
+- `42_Waterway_Network_Salt_River`
+
+#### 2. Network List Reordering
+- All network entries have been **reindexed and structurally reordered** to ensure clarity and scalability in naming conventions.
 
 ### 04/22/2025 Update Log
 
