@@ -11,43 +11,71 @@ Led by **NSF POSE Team from Arizona State University (ASU)**, the project is sup
 The dataset currently includes networks from a diverse set of cities and regions around the world:
 
 ```
-01_Anaheim
-02_Atlanta
-03_Austin
-04_Berlin-Center
-05_Berlin-Friedrichshain
-06_Berlin-Mitte-Center
-07_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center
-08_Berlin-Prenzlauerberg-Center
-09_Berlin-Tiergarten
-10_Birmingham-England
-11_Boston
-12_Chicago_Downtown
+1_Bay_Area_MultiModal
+1.1_Bay_Area_Driving
+1.2_Bay_Area_Cycling
+1.3_Bay_Area_Walking
+1.4_Bay_Area_Transit
+2_King_County_Metropolitan_MultiModal
+2.1_King_County_Metropolitan_Driving
+2.2_King_County_Metropolitan_Cycling
+2.3_King_County_Metropolitan_Walking
+2.4_King_County_Metropolitan_Transit
+3_Phoenix_City_MultiModal
+3.1_Phoenix_City_Driving
+3.2_Phoenix_City_Cycling
+3.3_Phoenix_City_Walking
+3.4_Phoenix_City_Transit
+4_WashingtonDC_City_MultiModal
+4.1_WashingtonDC_City_Driving
+4.2_WashingtonDC_City_Cycling
+4.3_WashingtonDC_City_Walking
+4.4_WashingtonDC_City_Transit
+5_Anaheim
+6_Berlin-Center
+7_Berlin-Friedrichshain
+8_Berlin-Mitte-Center
+9_Berlin-Mitte-Prenzlauerberg-Friedrichshain-Center
+10_Berlin-Prenzlauerberg-Center
+11_Berlin-Tiergarten
+12_Birmingham-England
 13_Chicago_Regional
 14_Chicago_Sketch
-15_Dallas
-16_Denver
-17_GoldCoast
-18_Honolulu
-19_Las_Vegas
-20_Miami
-21_Milwaukee
-22_Minneapolis
-23_New_Orleans
-24_New_York
-25_Philadelphia
-26_Paradise
-27_Phoenix_Metropolitan_Area
-28_Phoenix_City
-29_Phoenix_Walk
-30_Pittsburgh
-31_Portland
-32_San_Francisco
-33_Seattle
-34_Sioux_Falls
-35_Sydney
-36_Washington_DC
+15_GoldCoast
+16_Philadelphia
+17_Sioux_Falls
+18_Sydney
+19_Atlanta
+20_Austin
+21_Boston
+22_Chicago_Downtown
+23_Dallas
+24_Denver
+25_Honolulu
+26_Las_Vegas
+27_Miami
+28_Milwaukee
+29_Minneapolis
+30_New_Orleans
+31_New_York
+32_Phoenix_city
+33_Pittsburgh
+34_Philadelphia
+35_Portland
+36_San_Francisco
+37_Seattle
+38_WashingtonDC
+39_Planning Networks for NVTA
+39.1_NVTA_Full_Network
+39.2_NVTA_Subarea_Network
+40_State_level_Networks_MultiModal_USA
+41_Railway_Network_USA
+42_Waterway_Network_Salt_River
 ```
+
+![Table of Networks](GMNS_Tools/table_of_networks.png)
+https://docs.google.com/spreadsheets/d/1VtJ-fnzJJk1h6Vy3uBS8Glei4sA7WhAe7JcgZO6vEic/edit?usp=sharing
+
 ![](GMNS_Tools/country_maps/Geospatial_Distribution.png)
 
 These networks are formatted in GMNS to enable consistency, interoperability, and ease of use in academic and applied transportation research.
@@ -57,6 +85,11 @@ These networks are formatted in GMNS to enable consistency, interoperability, an
 - The GMNS+ has a set of optimization models on [Colab notebook](https://colab.research.google.com/drive/1VugIavOnZWLd0tXGWDXmFLdkUTYgjDR1#scrollTo=aIiQvw22Yy_u). These problems cover: (1) Shortest Path Problem, (2) Facility Location Problem, (3) Traffic Assigment Problem, (4) OD Matrix Estimation (ODME).
 
 ## Updates
+
+### 01/05/2025 Update Log
+
+- Updated network list.
+
 ### 04/22/2025 Update Log
 
 - Updated network list.
